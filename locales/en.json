@@ -1,55 +1,54 @@
 {
 	"Hero": {
-		"h1": "Make Landing Page Faster",
-		"h2": "This is a free, open-source and powerful landing page template for saas project, it will help you to make your startup faster."
+		"h1": "ClearAir-Insight",
+		"h2": "ClearAir-Insight is an intelligent system for air quality monitoring, providing data-driven analysis and visualization to support environmental management and decision-making."
 	},
 	"Feature": {
-		"h2": "Our Feature",
-		"h3": "Features of inWind Landing Page Template",
-		"description1": "Awesome landing page template.",
-		"description2": "Based on Next.JS, DaisyUI, TailwinCSS and other powerful libary.",
-		"description3": "Completely open source and completely free."
+		"h2": "Our Features",
+		"h3": "Core Functions of ClearAir-Insight",
+		"description1": "Comprehensive air quality data collection and analysis.",
+		"description2": "Based on advanced sensor technology and data visualization platform.",
+		"description3": "Open API interface, supporting multi-device integration."
 	},
 	"Pricing": {
-		"h2": "Our Pricing",
+		"h2": "Pricing Plans",
 		"h3": "Choose Your Plan",
-		"description": "Select the plan that best fits your needs.",
-		"doYouLike": "你喜欢这个落地页模板吗？",
-		"follow": "关注我的推特。"
+		"description": "We offer various packages to meet the needs of different users.",
+		"doYouLike": "Are you interested in our air quality monitoring system?",
+		"follow": "Follow us for the latest updates."
 	},
 	"Testimonial": {
-		"h2": "Testimonials",
-		"h3": "Wall of Love",
-		"description1": "If you use this landing page template and recommend it on your Twitter,",
-		"description2": "please let me know",
-		"description3": ",I will display your tweet and recommendation here."
+		"h2": "User Reviews",
+		"h3": "Customer Feedback",
+		"description1": "If you have used ClearAir-Insight and are satisfied with our product,",
+		"description2": "please share your experience with us",
+		"description3": ", we will showcase your review here."
 	},
 	"Faq": {
 		"h2": "FAQ",
 		"h3": "Frequently Asked Questions",
-		"description": "Here are some of the most frequently asked questions."
+		"description": "Here are some of the most commonly asked questions and answers."
 	},
 	"CTA": {
-		"h2": "Build Your Landing Page Now",
-		"h3": "Build your landing page, show your product, and start earning!"
+		"h2": "Start Monitoring Air Quality Now",
+		"h3": "Install ClearAir-Insight, understand the air quality around you, and protect the health of you and your family!"
 	},
 	"CTAButton": {
-		"btn1": "Get Source Code",
-		"btn2": "View Docs"
+		"btn2": "Get Started"
 	},
 	"About": {
 		"h1": "About Us",
-		"h2": "We are a professional team dedicated to front-end design and development, committed to providing innovative and efficient solutions for our clients.",
+		"h2": "We are a professional team focused on environmental monitoring technology, dedicated to providing users with accurate and reliable air quality data and analysis services.",
 		"why": "Why Choose Us",
-		"why_content": "With years of industry experience and expertise, we can deeply understand our clients' needs and provide customized solutions. We focus on innovation and user experience, ensuring that every project exceeds our clients' expectations.",
+		"why_content": "With advanced sensor technology and data analysis algorithms, we can provide precise air quality monitoring results. We focus on user experience and data visualization, ensuring that every user can easily understand and use our system.",
 		"team": "Team Introduction",
-		"team_content": "Our team is composed of passionate and creative designers, developers, and project managers. We believe that only through close teamwork and continuous learning can we provide the highest quality service and products for our clients."
+		"team_content": "Our team consists of environmental science experts, software engineers, and data analysts. We believe that only through interdisciplinary collaboration and continuous innovation can we develop the highest quality air quality monitoring system."
 	},
 	"Blog": {
-		"title": "Blog",
-		"description": "This is a separate blog listing page description",
-		"side1": "Description",
-		"side2": "Popular Blogs",
-		"side3": "Recently updated"
+		"title": "Knowledge Base",
+		"description": "Learn more about air quality and environmental health",
+		"side1": "Content Overview",
+		"side2": "Popular Articles",
+		"side3": "Recently Updated"
 	}
 }

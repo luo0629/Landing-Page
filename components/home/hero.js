@@ -1,9 +1,7 @@
 'use client';
-import HeroIcons from './icons';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { SiGithub } from 'react-icons/si';
-import { IoDocumentText } from 'react-icons/io5';
+import { IoArrowForward } from 'react-icons/io5';
 
 import { useEffect, useState } from 'react';
 export default function Hero({ locale, CTALocale }) {
@@ -52,24 +50,14 @@ export default function Hero({ locale, CTALocale }) {
 				>
 					<h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10'>{locale.h2}</h2>
 
-					<div className='w-full md:w-8/12 mx-auto flex flex-col md:flex-row md:items-center justify-between gap-y-5'>
-						<HeroIcons />
-
-						<div className='flex flex-col md:flex-row gap-2'>
+					<div className='w-full md:w-8/12 mx-auto flex flex-col items-center gap-y-5'>
+						<div className='flex justify-center w-full mt-4'>
 							<a
-								title='get source code'
-								className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-								href='https://github.com/huglemon/inwind-landing-page'
+								title='Get Started'
+								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
+								href='放移动的路径'
 							>
-								<SiGithub />
-								{CTALocale.btn1}
-							</a>
-							<a
-								title='get source code'
-								className='btn btn-sm md:btn-md btn-base rounded-full'
-								href='https://huglemon.com/blog/i-open-sourced-a-saas-landing-page'
-							>
-								<IoDocumentText /> {CTALocale.btn2}
+								{CTALocale.btn2} <IoArrowForward className="ml-2 text-lg" />
 							</a>
 						</div>
 					</div>
