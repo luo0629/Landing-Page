@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { useParams, useRouter, usePathname } from 'next/navigation';
 import { defaultLocale, localeNames } from '@/lib/i18n';
 
@@ -39,24 +40,26 @@ export default function LangSwitch() {
 			<div
 				tabIndex={0}
 				role='button'
-				className='flex items-center justify-center md:bg-base-100 md:rounded-full w-15 md:w-[100px] h-5 text-sm md:h-8 md:shadow-sm md:hover:shadow-md transition-all'
+				className='flex items-center justify-center gap-2 md:bg-base-100 md:rounded-full w-15 md:w-[100px] h-5 text-sm md:h-8 md:shadow-sm md:hover:shadow-md transition-all'
 			>
-				{localeNames[langName]}
+				{localeNames[langName].icon && React.createElement(localeNames[langName].icon, { className: "w-4 h-4" })}
+				{localeNames[langName].name}
 			</div>
 			<ul
 				tabIndex={0}
 				className='dropdown-content menu bg-base-100 rounded-box z-[1] w-40 p-2 shadow'
 			>
 				{Object.keys(localeNames).map((key) => {
-					const name = localeNames[key];
+					const { name, icon: Icon } = localeNames[key];
 					return (
 						<li key={key}>
 							<a
 								href='#'
 								title={`switch to ${name}`}
-								className='cursor-pointer'
+								className='cursor-pointer flex items-center gap-2'
 								onClick={handleSwitchLanguage(key)}
 							>
+								{Icon && React.createElement(Icon, { className: "w-4 h-4" })}
 								{name}
 							</a>
 						</li>

@@ -8,24 +8,23 @@ import LangSwitch from './langSwitch';
 
 import { usePathname } from 'next/navigation';
 import { defaultLocale } from '@/lib/i18n';
-import { NavLinksList } from '@/lib/navLinksList';
 
 export default function Navbar() {
 	const pathname = usePathname();
 	const [langName, setLangName] = useState(defaultLocale);
 	const [linkList, setLinkList] = useState([]);
 
-	useEffect(() => {
-		const fetchLinksList = async () => {
-			if (pathname === '/') {
-				setLangName(defaultLocale);
-			} else {
-				setLangName(pathname.split('/')[1]);
-			}
-			setLinkList(NavLinksList[`LINK_${langName.toUpperCase()}`] || []);
-		};
-		fetchLinksList();
-	}, [pathname, langName]);
+	// useEffect(() => {
+	// 	const fetchLinksList = async () => {
+	// 		if (pathname === '/') {
+	// 			setLangName(defaultLocale);
+	// 		} else {
+	// 			setLangName(pathname.split('/')[1]);
+	// 		}
+	// 		// setLinkList(NavLinksList[`LINK_${langName.toUpperCase()}`] || []);
+	// 	};
+	// 	fetchLinksList();
+	// }, [pathname, langName]);
 
 	return (
 		<header className='w-full relative z-50 bg-base-100 p-5 pb-0 container mx-auto md:mb-5 flex justify-between items-center'>
