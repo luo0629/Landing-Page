@@ -35,20 +35,5 @@
 	},
 	"CTAButton": {
 		"btn2": "Get Started"
-	},
-	"About": {
-		"h1": "About Us",
-		"h2": "We are a professional team focused on environmental monitoring technology, dedicated to providing users with accurate and reliable air quality data and analysis services.",
-		"why": "Why Choose Us",
-		"why_content": "With advanced sensor technology and data analysis algorithms, we can provide precise air quality monitoring results. We focus on user experience and data visualization, ensuring that every user can easily understand and use our system.",
-		"team": "Team Introduction",
-		"team_content": "Our team consists of environmental science experts, software engineers, and data analysts. We believe that only through interdisciplinary collaboration and continuous innovation can we develop the highest quality air quality monitoring system."
-	},
-	"Blog": {
-		"title": "Knowledge Base",
-		"description": "Learn more about air quality and environmental health",
-		"side1": "Content Overview",
-		"side2": "Popular Articles",
-		"side3": "Recently Updated"
 	}
 }

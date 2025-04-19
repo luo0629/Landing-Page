@@ -47,6 +47,7 @@ export default function Navbar() {
 
 			<ul className='w-3/5 px-5 font-medium hidden md:flex flex-nowrap items-center justify-around'>
 				{linkList.map((link, index) => {
+					const Icon = link.icon;
 					return (
 						<li
 							key={index}
@@ -54,12 +55,12 @@ export default function Navbar() {
 						>
 							<a
 								aria-label={link.name}
-								className='group relative'
+								className='group relative flex items-center gap-1'
 								title={link.name}
 								href={`/${langName}${link.url}`}
 							>
-								{link.name}
-								<div className='absolute left-[50%] group-hover:left-0 w-0 group-hover:w-full h-[3px] transition-all duration-300 bg-base-content/90'></div>
+								{Icon && <Icon className="text-lg" />} {link.name}
+								<div className='absolute bottom-[-5px] left-[50%] group-hover:left-0 w-0 group-hover:w-full h-[3px] transition-all duration-300 bg-base-content/90'></div>
 							</a>
 						</li>
 					);
@@ -84,14 +85,16 @@ export default function Navbar() {
 					</summary>
 					<ul className='menu dropdown-content z-[100] p-2 shadow bg-base-100 opacity-100 rounded-box w-52'>
 						{linkList.map((link, index) => {
+							const Icon = link.icon;
 							return (
 								<li key={index}>
 									<a
 										aria-label={link.name}
 										title={link.name}
 										href={`/${langName}${link.url}`}
+										className="flex items-center gap-2"
 									>
-										{link.name}
+										{Icon && <Icon className="text-lg" />} {link.name}
 									</a>
 								</li>
 							);
