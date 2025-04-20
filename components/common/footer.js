@@ -1,27 +1,12 @@
 'use client';
 import Image from 'next/image';
-// import { NavLinksList } from '@/lib/navLinksList';
-import { usePathname } from 'next/navigation';
 import { defaultLocale } from '@/lib/i18n';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FaHeart } from 'react-icons/fa';
 
 export default function Footer() {
-	const pathname = usePathname();
-	const [langName, setLangName] = useState(defaultLocale);
-	const [linkList, setLinkList] = useState([]);
-
-	// useEffect(() => {
-	// 	const fetchLinksList = async () => {
-	// 		if (pathname === '/') {
-	// 			setLangName(defaultLocale);
-	// 		} else {
-	// 			setLangName(pathname.split('/')[1]);
-	// 		}
-	// 		setLinkList(NavLinksList[`LINK_${langName.toUpperCase()}`] || []);
-	// 	};
-	// 	fetchLinksList();
-	// }, [pathname, langName]);
+	const [langName] = useState(defaultLocale);
+	const [linkList] = useState([]);
 
 	return (
 		<footer className='w-full px-5 py-10 bg-[#202020] text-[#f7f7f7]'>
