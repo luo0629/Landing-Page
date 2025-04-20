@@ -2,11 +2,14 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { IoArrowForward } from 'react-icons/io5';
+import { IoIosArrowUp } from 'react-icons/io';
+import { FaRocket } from 'react-icons/fa';
 
 import { useEffect, useState } from 'react';
 export default function Hero({ locale, CTALocale }) {
 	const [tilt, setTilt] = useState(45);
 	const [duration, setDuration] = useState(0.8);
+	const [showScrollTop, setShowScrollTop] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -15,6 +18,13 @@ export default function Hero({ locale, CTALocale }) {
 			const tiltValue = Math.max(maxTilt - scrollY / 8, 0); // 根据滚动值调整
 			setTilt(tiltValue);
 			setDuration(0.3);
+			
+			// 显示/隐藏回到顶部按钮
+			if (scrollY > 300) {
+				setShowScrollTop(true);
+			} else {
+				setShowScrollTop(false);
+			}
 		};
 
 		window.addEventListener('scroll', handleScroll);
@@ -23,6 +33,13 @@ export default function Hero({ locale, CTALocale }) {
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
+	
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	};
 
 	return (
 		<>
@@ -53,7 +70,6 @@ export default function Hero({ locale, CTALocale }) {
 					<div className='w-full md:w-8/12 mx-auto flex flex-col items-center gap-y-5'>
 						<div className='flex justify-center w-full mt-4'>
 							<a
-								title='Get Started'
 								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
 								href='放移动的路径'
 							>
@@ -80,6 +96,30 @@ export default function Hero({ locale, CTALocale }) {
 					/>
 				</motion.div>
 			</section>
+
+			{/* 回到顶部按钮 */}
+			{showScrollTop && (
+				<motion.button
+					initial={{ opacity: 0, scale: 0.5 }}
+					animate={{ opacity: 1, scale: 1 }}
+					exit={{ opacity: 0, scale: 0.5 }}
+					onClick={scrollToTop}
+					whileHover={{ 
+						scale: 1.1,
+						boxShadow: "0 0 15px rgba(255, 255, 255, 0.3)"
+					}}
+					whileTap={{ scale: 0.9 }}
+					className="fixed bottom-24 right-8 z-50 bg-base-content text-base-100 dark:bg-white dark:text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm border border-base-content/10 overflow-hidden group"
+					aria-label="回到顶部"
+				>
+					<div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-all duration-300"></div>
+					<div className="absolute inset-[-2px] rounded-full opacity-0 group-hover:opacity-30 bg-gradient-to-r from-white via-transparent to-white blur-md transition-opacity duration-500"></div>
+					<div className="relative flex items-center justify-center">
+						<FaRocket className="absolute text-2xl group-hover:translate-y-[-30px] group-hover:opacity-0 transition-all duration-300" />
+						<IoIosArrowUp className="text-2xl translate-y-[30px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" />
+					</div>
+				</motion.button>
+			)}
 
 			<div className='absolute w-[100%] left-[0] top-[10%] md:top-[20%] h-[300px]'>
 				<svg

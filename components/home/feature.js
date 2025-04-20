@@ -35,8 +35,6 @@ export default function Feature({ locale, langName = 'en' }) {
 						{locale.description1}
 						<br />
 						{locale.description2}
-						<br />
-						{locale.description3}
 					</h4>
 				</div>
 			</motion.div>
