@@ -2,7 +2,7 @@ import { RiChatHistoryFill } from 'react-icons/ri';
 import { FaHotjar } from 'react-icons/fa';
 import { BsChatRightQuoteFill } from 'react-icons/bs';
 import BlogList from '@/locales/blog/list.json';
-import { defaultLocale, getDictionary } from '@/lib/i18n';
+import { getDictionary } from '@/lib/i18n';
 import pubfn from '@/lib/function';
 export default async function Sidebar({ langName = 'en', description }) {
 	const dict = await getDictionary(langName);
