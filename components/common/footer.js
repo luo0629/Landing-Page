@@ -65,14 +65,7 @@ export default function Footer() {
 					</p>
 					<p>
 						©{' '}
-						<a
-							title={'ClearAir-Insight'}
-							href='http://huglemon.com?rel=landingpage'
-							target='_blank'
-							className="hover:text-primary transition-colors"
-						>
-							ClearAir-Insight
-						</a>{' '}
+							ClearAir-Insight{' '}
 						{new Date().getFullYear()}
 					</p>
 				</div>
