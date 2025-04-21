@@ -14,17 +14,16 @@ export default function Navbar() {
 	const [langName, setLangName] = useState(defaultLocale);
 	const [linkList, setLinkList] = useState([]);
 
-	// useEffect(() => {
-	// 	const fetchLinksList = async () => {
-	// 		if (pathname === '/') {
-	// 			setLangName(defaultLocale);
-	// 		} else {
-	// 			setLangName(pathname.split('/')[1]);
-	// 		}
-	// 		// setLinkList(NavLinksList[`LINK_${langName.toUpperCase()}`] || []);
-	// 	};
-	// 	fetchLinksList();
-	// }, [pathname, langName]);
+	useEffect(() => {
+		const fetchLinksList = async () => {
+			if (pathname === '/') {
+				setLangName(defaultLocale);
+			} else {
+				setLangName(pathname.split('/')[1]);
+			}
+		};
+		fetchLinksList();
+	}, [pathname, langName]);
 
 	return (
 		<header className='w-full relative z-50 bg-base-100 p-5 pb-0 container mx-auto md:mb-5 flex justify-between items-center'>
@@ -67,15 +66,6 @@ export default function Navbar() {
 			</ul>
 
 			<div className='md:w-1/5 flex items-center justify-end gap-2'>
-				<label className='flex items-center justify-center md:bg-base-100 md:rounded-full w-5 md:w-8 h-5 md:h-8 md:shadow-sm md:hover:shadow-md transition-all'>
-					<a
-						aria-label='get template source code'
-						title='get template source code'
-						href='https://github.com/huglemon/inwind-landing-page'
-					>
-						<SiGithub size={14} />
-					</a>
-				</label>
 				<ThemeToggle />
 				<LangSwitch />
 				<details className='flex md:hidden dropdown dropdown-end'>
