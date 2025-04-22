@@ -9,25 +9,6 @@
 		"description1": "Comprehensive air quality data collection and analysis.",
 		"description2": "Based on advanced sensor technology and data visualization platform."
 	},
-	"Pricing": {
-		"h2": "Pricing Plans",
-		"h3": "Choose Your Plan",
-		"description": "We offer various packages to meet the needs of different users.",
-		"doYouLike": "Are you interested in our air quality monitoring system?",
-		"follow": "Follow us for the latest updates."
-	},
-	"Testimonial": {
-		"h2": "User Reviews",
-		"h3": "Customer Feedback",
-		"description1": "If you have used AirSight and are satisfied with our product,",
-		"description2": "please share your experience with us",
-		"description3": ", we will showcase your review here."
-	},
-	"Faq": {
-		"h2": "FAQ",
-		"h3": "Frequently Asked Questions",
-		"description": "Here are some of the most commonly asked questions and answers."
-	},
 	"CTA": {
 		"h2": "Start Monitoring Air Quality Now",
 		"h3": "Install AirSight, understand the air quality around you, and protect the health of you and your family!"
