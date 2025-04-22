@@ -18,7 +18,6 @@ export default function Cta({ locale }) {
 					<h2 className='font-bold  text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
 						{locale.h2}
 					</h2>
-
 					<h3 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>{locale.h3}</h3>
 				</div>
 			</motion.div>

@@ -78,7 +78,7 @@ export default function Hero({ locale, CTALocale }) {
 							</a>
 							<a
 								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
-								href='/login'
+								href='放移动的路径'
 							>
 								{CTALocale.btn1} <RiLoginBoxLine className="ml-2 text-lg" />
 							</a>
