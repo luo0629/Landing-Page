@@ -1,9 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 
-import { IoArrowForward } from 'react-icons/io5';
-
-export default function Cta({ locale, CTALocale }) {
+export default function Cta({ locale }) {
 	return (
 		<section
 			id='feature'
@@ -22,13 +20,6 @@ export default function Cta({ locale, CTALocale }) {
 					</h2>
 
 					<h3 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>{locale.h3}</h3>
-
-					<a
-								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
-								href='放移动的路径'
-							>
-								{CTALocale.btn2} <IoArrowForward className="ml-2 text-lg" />
-					</a>
 				</div>
 			</motion.div>
 

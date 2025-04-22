@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { IoArrowForward } from 'react-icons/io5';
 import { IoIosArrowUp } from 'react-icons/io';
 import { FaRocket } from 'react-icons/fa';
+import { RiLoginBoxLine } from 'react-icons/ri';
 
 import { useEffect, useState } from 'react';
 export default function Hero({ locale, CTALocale }) {
@@ -68,12 +69,18 @@ export default function Hero({ locale, CTALocale }) {
 					<h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10'>{locale.h2}</h2>
 
 					<div className='w-full md:w-8/12 mx-auto flex flex-col items-center gap-y-5'>
-						<div className='flex justify-center w-full mt-4'>
+						<div className='flex justify-center w-full mt-4 gap-4'>
 							<a
 								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
 								href='放移动的路径'
 							>
 								{CTALocale.btn2} <IoArrowForward className="ml-2 text-lg" />
+							</a>
+							<a
+								className='btn btn-md lg:btn-lg btn-base rounded-full font-semibold px-8'
+								href='/login'
+							>
+								{CTALocale.btn1} <RiLoginBoxLine className="ml-2 text-lg" />
 							</a>
 						</div>
 					</div>
