@@ -1,11 +1,11 @@
 {
 	"Hero": {
-		"h1": "ClearAir-Insight",
-		"h2": "ClearAir-Insight 是一款智能化的空气质量监测与分析系统，能够实时采集环境数据，并通过数据驱动的方式进行分析与可视化，助力科学决策与环境管理。"
+		"h1": "AirSight",
+		"h2": "AirSight 是一款智能化的空气质量监测与分析系统，能够实时采集环境数据，并通过数据驱动的方式进行分析与可视化，助力科学决策与环境管理。"
 	},
 	"Feature": {
 		"h2": "产品特点",
-		"h3": "ClearAir-Insight 的核心功能",
+		"h3": "AirSight 的核心功能",
 		"description1": "全面的空气质量数据收集与分析。",
 		"description2": "基于先进传感器技术和数据可视化平台。"
 	},
@@ -19,7 +19,7 @@
 	"Testimonial": {
 		"h2": "用户评价",
 		"h3": "客户反馈",
-		"description1": "如果您使用了ClearAir-Insight并对我们的产品满意，",
+		"description1": "如果您使用了AirSight并对我们的产品满意，",
 		"description2": "请与我们分享您的体验",
 		"description3": "，我们将在此展示您的评价。"
 	},
@@ -30,7 +30,7 @@
 	},
 	"CTA": {
 		"h2": "立即开始监测空气质量",
-		"h3": "安装ClearAir-Insight，了解您周围的空气质量，保护您和家人的健康！"
+		"h3": "安装AirSight，了解您周围的空气质量，保护您和家人的健康！"
 	},
 	"CTAButton": {
 		"btn2": "开始使用"

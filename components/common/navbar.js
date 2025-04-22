@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { MdMenu } from 'react-icons/md';
-import { SiGithub } from 'react-icons/si';
 import { useEffect, useState } from 'react';
 import ThemeToggle from './themeToggle';
 import LangSwitch from './langSwitch';
@@ -40,7 +39,7 @@ export default function Navbar() {
 					className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
 					alt='logo'
 				></Image>
-				<h2 className='ml-3 font-bold leading-5'>ClearAir-Insight</h2>
+				<h2 className='ml-3 font-bold leading-5'>AirSight</h2>
 			</a>
 
 			<ul className='w-3/5 px-5 font-medium hidden md:flex flex-nowrap items-center justify-around'>

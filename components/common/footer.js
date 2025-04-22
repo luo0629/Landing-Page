@@ -25,7 +25,7 @@ export default function Footer() {
 							className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
 							alt='logo'
 						/>
-						<h2 className='ml-3 font-bold leading-5'>ClearAir-Insight</h2>
+						<h2 className='ml-3 font-bold leading-5'>AirSight</h2>
 					</a>
 					<div className='flex flex-wrap justify-center md:justify-start gap-x-4 md:gap-x-6 gap-y-3'>
 						{linkList.map((link, index) => {
@@ -50,7 +50,7 @@ export default function Footer() {
 					</p>
 					<p>
 						©{' '}
-							ClearAir-Insight{' '}
+							AirSight{' '}
 						{new Date().getFullYear()}
 					</p>
 				</div>
